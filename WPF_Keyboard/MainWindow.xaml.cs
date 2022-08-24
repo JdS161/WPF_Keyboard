@@ -161,9 +161,7 @@ namespace WPF_Keyboard
             if (tb1.Text.Length == tb2.Text.Length)
             {
                 timer.Stop();
-                MessageBox.Show($"Task complete!\n Symbols: {tb1.Text.Length}.\n " +
-                    $"Fails: {cntrFail.Content}.\nType speed {speed.Content} symb/min", "Complete",
-                    MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show($"Task complete!\nSymbols: {tb1.Text.Length}.\nFails: {cntrFail.Content}.\nType speed {speed.Content} symb/min", "Complete", MessageBoxButton.OK, MessageBoxImage.Information);
                 Stop();
             }
         }
